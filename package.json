@@ -1,63 +1,67 @@
 {
-  "name": "open-itsm-desktop",
-  "productName": "open-itsm-desktop",
-  "version": "1.0.0",
-  "description": "My Electron application description",
-  "main": "dist/index.js",
-  "scripts": {
-    "start": "tsc && electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts ."
-  },
-  "keywords": [],
-  "author": {
-    "name": "Luke Van Epen",
-    "email": "luke.vanepen@kineticit.com.au"
-  },
-  "license": "MIT",
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "open_itsm_desktop"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
-  },
-  "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.52",
-    "@electron-forge/maker-deb": "^6.0.0-beta.52",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.52",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.52",
-    "@electron-forge/maker-zip": "^6.0.0-beta.52",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
-    "electron": "9.2.1",
-    "eslint": "^6.8.0",
-    "eslint-plugin-import": "^2.22.0",
-    "typescript": "^3.9.7"
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
-  }
+	"name": "open-itsm-desktop",
+	"productName": "open-itsm-desktop",
+	"version": "0.0.1",
+	"description": "Frontend for OpenITSM",
+	"main": "dist/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/VanWeapon/open-itsm-desktop.git"
+	},
+	"scripts": {
+		"start": "tsc && electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		"publish": "electron-forge publish",
+		"lint": "eslint --ext .ts ."
+	},
+	"keywords": [],
+	"author": {
+		"name": "Luke Van Epen",
+		"email": "vanweapon@gmail.com"
+	},
+	"license": "MIT",
+	"config": {
+		"forge": {
+			"packagerConfig": {},
+			"makers": [
+				{
+					"name": "@electron-forge/maker-squirrel",
+					"config": {
+						"name": "open_itsm_desktop"
+					}
+				},
+				{
+					"name": "@electron-forge/maker-zip",
+					"platforms": [
+						"darwin"
+					]
+				},
+				{
+					"name": "@electron-forge/maker-deb",
+					"config": {}
+				},
+				{
+					"name": "@electron-forge/maker-rpm",
+					"config": {}
+				}
+			]
+		}
+	},
+	"devDependencies": {
+		"@electron-forge/cli": "^6.0.0-beta.52",
+		"@electron-forge/maker-deb": "^6.0.0-beta.52",
+		"@electron-forge/maker-rpm": "^6.0.0-beta.52",
+		"@electron-forge/maker-squirrel": "^6.0.0-beta.52",
+		"@electron-forge/maker-zip": "^6.0.0-beta.52",
+		"@typescript-eslint/eslint-plugin": "^2.34.0",
+		"@typescript-eslint/parser": "^2.34.0",
+		"electron": "9.2.1",
+		"eslint": "^6.8.0",
+		"eslint-plugin-import": "^2.22.0",
+		"typescript": "^3.9.7"
+	},
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.0"
+	}
 }
